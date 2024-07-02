@@ -1,0 +1,91 @@
+Change Password
+
+Test Case 4.1: (Correct Inputs)
+Input:
+	Old Password (Correct)
+	New Password (Correct)
+
+
+Expected Output:
+	Old Password is changed into New Password
+
+Initialization:
+	Sign into Account
+	Verify Old Password
+
+Test Steps
+	Log In successfully
+	Current Password is verified
+	New Password is verified
+	New Password is now the Current Password
+
+Tear Down:
+	Sign Out of Account
+
+Test Case 4.2: (Wrong New Password Requirements)
+Input:
+	Old Password (Correct)
+	New Password (No Symbol)
+
+
+Expected Output:
+	Prompt the user to inclued a Symbol character
+
+
+Initialization:
+	Sign into Account
+	Verify Old Password
+
+Test Steps
+	Log In successfully
+	Current Password is verified
+	New Password doesn't meet the reqirements
+	Prompt the user to try a different New Password
+
+Tear Down:
+	Sign Out of Account
+
+Test Case 4.3: (Wrong Input Type)
+Input:
+	Old Password (Correct)
+	New Password (Include Emojis)
+
+
+Expected Output:
+	Prompt the user to try a new Password the meet the requirements.
+
+
+Initialization:
+	Sign into Account
+	Verify Old Password
+
+Test Steps
+	Log In successfully
+	Current Password is verified
+	New Password doesn't meet the reqirements
+	Prompt the user to try a different New Password
+
+Tear Down:
+	Sign Out of Account
+
+Test Case 4.4: (No Input)
+Input:
+	Old Password (Correct)
+	New Password (No Input)
+
+
+Expected Output:
+	Prompt the user to input a new Password.
+
+
+Initialization:
+	Sign into Account
+	Verify Old Password
+
+Test Steps
+	Log In successfully
+	Current Password is verified
+	Waiting for input for New Password before continue.
+
+Tear Down:
+	Sign Out of Account
