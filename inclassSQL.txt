@@ -1,0 +1,6 @@
+SELECT Courses.name FROM Courses 
+GROUP BY Courses.name HAVING AVG(Enrollments.grade) FROM Enrollments
+INNER JOIN Courses, Enrollments ON course_id;
+
+SELECT name FROM Courses WHERE prerequisite_course_id IS NOT NULL;
+
