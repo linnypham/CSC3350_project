@@ -1,5 +1,5 @@
 public interface table {
-    public void updateTable();
-    public void addColumn();
-    public void searchTable();
+    public String updateTable();
+    public String addColumn();
+    public String searchTable();
 }
