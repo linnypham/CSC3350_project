@@ -1,0 +1,1 @@
+ALTER TABLE emplyee ADD ssn INT;

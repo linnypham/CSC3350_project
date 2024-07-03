@@ -1,0 +1,3 @@
+UPDATE employee
+SET f_name = '', l_name = '',...
+WHERE empid = 1;

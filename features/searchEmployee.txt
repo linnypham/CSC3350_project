@@ -1,0 +1,5 @@
+SELECT * FROM employee 
+WHERE f_name = 'a' 
+AND l_name = 'b'
+AND ssn = 1
+AND empid = 2;
