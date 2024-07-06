@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="733b4617-cc03-4838-bdfd-0a7104e2d0bb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/CSC3350_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CSC3350_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/EMPLOYEE MANAGEMENT SYSTEM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/EMPLOYEE MANAGEMENT SYSTEM.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/table.java" beforeDir="false" afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +44,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Linny/Documents/GitHub/CSC3350_project",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "C:/Users/Linny/Documents/GitHub/CSC3350_project/lib/mysql-connector-j-9.0.0/mysql-connector-j-9.0.0.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
