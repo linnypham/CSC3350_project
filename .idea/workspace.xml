@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="733b4617-cc03-4838-bdfd-0a7104e2d0bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/EmployeeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/PayStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/connectDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Report.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/EmployeeDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Table.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/PayStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/connectDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
