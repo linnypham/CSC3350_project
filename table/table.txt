@@ -1,0 +1,16 @@
+CREATE TABLE Employee (
+    empId INT PRIMARY KEY,
+    name VARCHAR(100),
+    division VARCHAR(50),
+    jobTitle VARCHAR(50),
+    salary DECIMAL(10, 2),
+    ssn CHAR(9)
+);
+
+CREATE TABLE PayStatement (
+    payStatementId INT PRIMARY KEY,
+    empId INT,
+    payDate DATE,
+    amount DECIMAL(10, 2),
+    FOREIGN KEY (empId) REFERENCES Employee(empId)
+);
