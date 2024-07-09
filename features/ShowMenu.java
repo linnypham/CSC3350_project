@@ -1,10 +1,4 @@
-import java.util.Scanner;
-
-public class EmployeeManager {
-
-    private static Scanner scanner = new Scanner(System.in);
-
-    public static void showMenu() {
+private static void ShowMenu() {
         while (true) {
             System.out.println("Employee Management System");
             System.out.println("1. Add Employee");
@@ -17,37 +11,35 @@ public class EmployeeManager {
             System.out.println("8. Total Pay by Division");
             System.out.println("9. Exit");
             System.out.print("Choose an option: ");
-
             int choice = scanner.nextInt();
             scanner.nextLine();  // consume newline
 
             switch (choice) {
                 case 1:
-                    AddEmployee();
+                    addEmployee();
                     break;
                 case 2:
-                    UpdateEmployee();
+                    updateEmployee();
                     break;
                 case 3:
-                    DeleteEmployee();
+                    deleteEmployee();
                     break;
                 case 4:
-                    SearchEmployee();
+                    searchEmployee();
                     break;
                 case 5:
-                    UpdateSalary();
+                    updateSalary();
                     break;
                 case 6:
-                    ViewPayStatements();
+                    viewPayStatements();
                     break;
                 case 7:
-                    TotalPayByJobTitle();
+                    totalPayByJobTitle();
                     break;
                 case 8:
-                    TotalPayByDivision();
+                    totalPayByDivision();
                     break;
                 case 9:
-                    System.out.println("Exiting Employee Management System. Goodbye!");
                     System.exit(0);
                     break;
                 default:
@@ -55,10 +47,3 @@ public class EmployeeManager {
             }
         }
     }
-
-    // Methods like AddEmployee(), UpdateEmployee(), etc. should be defined here
-
-    public static void main(String[] args) {
-        showMenu();
-    }
-}

@@ -1,12 +1,4 @@
-import java.sql.SQLException;
-import java.util.Scanner;
-
-public class EmployeeManager {
-
-    private static Scanner scanner = new Scanner(System.in);
-    private static EmployeeDAO employeeDAO = new EmployeeDAO(); // Assuming EmployeeDAO is correctly implemented
-
-    public static void addEmployee() {
+private static void AddEmployee() {
         System.out.print("Enter Employee ID: ");
         int empId = scanner.nextInt();
         scanner.nextLine();  // consume newline
@@ -34,9 +26,7 @@ public class EmployeeManager {
             employeeDAO.addEmployee(emp);
             System.out.println("Employee added successfully.");
         } catch (SQLException e) {
-            System.out.println("Failed to add employee: " + e.getMessage());
             e.printStackTrace();
+            System.out.println("Failed to add employee.");
         }
     }
-
-}

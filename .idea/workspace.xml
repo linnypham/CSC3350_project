@@ -5,24 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="733b4617-cc03-4838-bdfd-0a7104e2d0bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/AddEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/DatabaseUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/DeleteEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/SearchEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/ShowMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/TotalPayByDivision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/TotalPayByJobTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/UpdateEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/UpdateSalary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/ViewPayStatements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/AddEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/DatabaseUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/DeleteEmployee.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/DatabaseConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/EmployeeDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/PayStatement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/PayStatementDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/SearchEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/ShowMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/TotalPayByDivision.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/TotalPayByJobTitle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/UpdateEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/UpdateSalary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/ViewPayStatements.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
