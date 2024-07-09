@@ -110,7 +110,7 @@ public class DatabaseTable implements DatabaseFunctionality {
 
     }
 
-    //allows for column to be deleted
+    //allows for column to be added
     public void addColumn(String tableName, String columnName, String dataType)throws SQLException{
 
         if(!columnExist(tableName, columnName)){
@@ -130,8 +130,22 @@ public class DatabaseTable implements DatabaseFunctionality {
         }
     }
 
-    //allows for column to be added
-    public void deleteColumn(){
+     //allows for column to be deleted
+    public void deleteColumn(String tableName, String columnName) throws SQLException{
+
+        if(columnExist(tableName, columnName)){//if column does not exist
+            try{
+                Statement statement = connection.createStatement();
+                String deleteColumn = "ALTER TABLE " + tableName
+                        + "DROP " +columnName; //data type can be attained through user choice.
+                statement.execute(deleteColumn);
+                System.out.println("Column " +columnName+" has been deleted.");
+            }catch(SQLException e) {
+                e.printStackTrace();
+            }
+        }else{
+            System.out.println("Column " +columnName+ " does not exist in" +tableName+ " table");
+        }
 
     }
 
