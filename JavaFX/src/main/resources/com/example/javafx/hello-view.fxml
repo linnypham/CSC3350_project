@@ -33,7 +33,7 @@
          <TextField />
       </graphic>
    </Label>
-   <Label prefHeight="25.0" prefWidth="234.0" text="FULL NAME">
+   <Label prefHeight="25.0" prefWidth="234.0" text="SSN">
       <graphic>
          <TextField />
       </graphic>
