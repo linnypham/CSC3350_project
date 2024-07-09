@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="674.0" prefWidth="491.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Label layoutX="139.0" layoutY="53.0" prefHeight="25.0" prefWidth="234.0" text="ID">
+      <graphic>
+         <TextField />
+      </graphic>
+   </Label>
+   <Label layoutX="139.0" layoutY="98.0" prefHeight="25.0" prefWidth="234.0" text="FULL NAME">
+      <graphic>
+         <TextField />
+      </graphic>
+   </Label>
+   <Label layoutX="139.0" layoutY="377.0" prefHeight="25.0" prefWidth="234.0" text="DIVISION">
+      <graphic>
+         <TextField />
+      </graphic>
+   </Label>
+   <Label layoutX="139.0" layoutY="422.0" prefHeight="25.0" prefWidth="234.0" text="TITLE">
+      <graphic>
+         <TextField />
+      </graphic>
+   </Label>
+   <Label layoutX="139.0" layoutY="75.0" prefHeight="25.0" prefWidth="234.0" text="SALARY">
+      <graphic>
+         <TextField />
+      </graphic>
+   </Label>
+   <Label prefHeight="25.0" prefWidth="234.0" text="FULL NAME">
+      <graphic>
+         <TextField />
+      </graphic>
+   </Label>
+
+  <Label fx:id="welcomeText" />
+   <ButtonBar prefHeight="25.0" prefWidth="333.0">
+      <buttons>
+         <Button mnemonicParsing="false" text="Update" />
+         <Button mnemonicParsing="false" text="New" />
+         <Button mnemonicParsing="false" text="Delete" />
+        <Button onAction="#onHelloButtonClick" text="Save" />
+      </buttons>
+   </ButtonBar>
+   <Button mnemonicParsing="false" text="SEARCH">
+      <graphic>
+         <TextField text="ID..." />
+      </graphic>
+   </Button>
+   <TableView prefHeight="200.0" prefWidth="200.0">
+     <columns>
+       <TableColumn prefWidth="75.0" text="ID" />
+       <TableColumn prefWidth="75.0" text="Name" />
+         <TableColumn prefWidth="75.0" text="Division" />
+         <TableColumn prefWidth="75.0" text="Title" />
+         <TableColumn prefWidth="75.0" text="Salary" />
+         <TableColumn prefWidth="75.0" text="SSN" />
+     </columns>
+   </TableView>
+</VBox>

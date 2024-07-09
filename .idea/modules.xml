@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CSC3350_project.iml" filepath="$PROJECT_DIR$/.idea/CSC3350_project.iml" />
       <module fileurl="file://$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/EMPLOYEE MANAGEMENT SYSTEM.iml" filepath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/EMPLOYEE MANAGEMENT SYSTEM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFX/JavaFX.iml" filepath="$PROJECT_DIR$/JavaFX/JavaFX.iml" />
     </modules>
   </component>
 </project>
