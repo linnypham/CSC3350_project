@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class DatabaseTable implements DatabaseFunctionality {
+public class DatabaseTable /*implements DatabaseFunctionality*/ {
 
     String tableName;
     DatabaseConnection dbConnection;
@@ -16,7 +16,6 @@ public class DatabaseTable implements DatabaseFunctionality {
     }
 
     //methods
-    @Override
     public void createTable(String tableName) throws SQLException {
 
         if(connection != null){//check for connection first
@@ -106,22 +105,33 @@ public class DatabaseTable implements DatabaseFunctionality {
     }
 
     //allows for searching of table
-    public void searchTable(){
+    //discuss how this is going to work
+    public void searchTable(String tableName)throws SQLException{
+
+        if(connection != null){
+            try {
+                Statement statement = connection.createStatement();
+                String tableSearch = "SELECT * FROM " +tableName+";";
+                statement.execute(tableSearch);
+                System.out.println("Table " +tableName+" created");
+
+            }catch(SQLException e) {
+                e.printStackTrace();
+            }
+        }
 
     }
 
-    //allows for column to be added
+    //allows for column to be deleted
     public void addColumn(String tableName, String columnName, String dataType)throws SQLException{
-
-        if(!columnExist(tableName, columnName)){
+        if(!columnExist(tableName, columnName)){//if column does not exist
             try{
-                Statement statement = connection.createStatement();
-                String createColumn = "ALTER TABLE " + tableName
-                        + "ADD " +columnName
-                        + " " + dataType; //data type can be attained through user choice.
+                String sql = String.format("ALTER TABLE %s ADD COLUMN %s %s", tableName, columnName,  dataType);
+                try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                    statement.executeUpdate();
+                }
+                System.out.println("Column " +tableName+" created");
 
-                statement.execute(createColumn);
-                System.out.println("Table " +tableName+" created");
             }catch(SQLException e) {
                 e.printStackTrace();
             }
@@ -130,7 +140,7 @@ public class DatabaseTable implements DatabaseFunctionality {
         }
     }
 
-     //allows for column to be deleted
+    //allows for column to be deleted
     public void deleteColumn(String tableName, String columnName) throws SQLException{
 
         if(columnExist(tableName, columnName)){//if column does not exist
@@ -147,6 +157,30 @@ public class DatabaseTable implements DatabaseFunctionality {
             System.out.println("Column " +columnName+ " does not exist in" +tableName+ " table");
         }
 
+    }
+
+    //include function that would print out all information of the table
+    void displayTable(String tableName) throws SQLException{
+        if(connection != null){
+
+            if(tableExist(connection, tableName)){
+
+            }
+
+            try{
+                String sql = String.format("SELECT * FROM "+tableName);
+                try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                    statement.executeUpdate();
+
+                    while(statement.getResultSet().next()){
+                        System.out.println(statement.toString());
+                    }
+                }
+
+            }catch (SQLException e){
+                e.printStackTrace();
+            }
+        }
     }
 
 }
