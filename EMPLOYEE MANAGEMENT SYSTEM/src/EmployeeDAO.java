@@ -4,23 +4,56 @@ import java.util.List;
 
 public class EmployeeDAO {
     public List<Employee> getAllEmployees() throws SQLException {
-        Connection conn = DatabaseConnection.getConnection();
-        Statement stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM Employee");
-        return rs;
+        List<Employee> employees = new ArrayList<>();
+
+        try (Connection conn = DatabaseConnection.getConnection();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery("SELECT * FROM Employee")) {
+
+            while (rs.next()) {
+                Employee employee = new Employee();
+                employee.setId(rs.getInt("id"));
+                employee.setName(rs.getString("name"));
+                employee.setAge(rs.getInt("age"));
+                employee.setDepartment(rs.getString("department"));
+                // set other fields of employee
+
+                employees.add(employee);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw e;
+        }
+
+        return employees;
     }
+}
 
     public Employee getEmployeeById(int id) throws SQLException {
-        Connection conn = DatabaseConnection.getConnection();
-        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM Employee WHERE empId = ?");
-        stmt.setInt(1, id);
-        ResultSet rs = stmt.executeQuery();
-        if (rs.next()) {
-            return rs;
-        } else {
-            return null;
+        Employee employee = null;
+
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement("SELECT * FROM Employee WHERE empId = ?")) {
+
+            stmt.setInt(1, id);
+            ResultSet rs = stmt.executeQuery();
+
+            if (rs.next()) {
+                employee = new Employee();
+                employee.setId(rs.getInt("empId"));
+                employee.setName(rs.getString("name"));
+                employee.setAge(rs.getInt("age"));
+                employee.setDepartment(rs.getString("department"));
+                // set other fields of employee
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw e;
         }
+
+        return employee;
     }
+}
 
     public void addEmployee(int empId, String name, String division, String jobTitle, double salary, String ssn) throws SQLException {
         Connection conn = DatabaseConnection.getConnection();

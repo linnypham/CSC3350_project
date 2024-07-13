@@ -14,45 +14,56 @@ public class Main {
     private static void showMenu() {
         while (true) {
             System.out.println("Employee Management System");
-            System.out.println("1. Add Employee");
-            System.out.println("2. Update Employee");
-            System.out.println("3. Delete Employee");
-            System.out.println("4. Search Employee");
-            System.out.println("5. Update Salary");
-            System.out.println("6. View Pay Statements");
-            System.out.println("7. Total Pay by Job Title");
-            System.out.println("8. Total Pay by Division");
-            System.out.println("9. Exit");
+            System.out.println("1. Show All Employee");
+            System.out.println("2. Add Employee");
+            System.out.println("3. Update Employee");
+            System.out.println("4. Delete Employee");
+            System.out.println("5. Search Employee");
+            System.out.println("6. Update Salary");
+            System.out.println("7. View Pay Statements by ID");
+            System.out.println("8. Total Pay by Job Title");
+            System.out.println("9. Total Pay by Division");
+            System.out.println("10. Change Column Name");
+            System.out.println("11. Add Column to Table");
+            System.out.println("12. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
             scanner.nextLine();  // consume newline
 
             switch (choice) {
                 case 1:
+                    getAllEmployees();
+                case 2:
                     addEmployee();
                     break;
-                case 2:
+                case 3:
                     updateEmployee();
                     break;
-                case 3:
+                case 4:
                     deleteEmployee();
                     break;
-                case 4:
+                case 5:
                     searchEmployee();
                     break;
-                case 5:
+                case 6:
                     updateSalary();
                     break;
-                case 6:
+                case 7:
                     viewPayStatements();
                     break;
-                case 7:
+                case 8:
                     totalPayByJobTitle();
                     break;
-                case 8:
+                case 9:
                     totalPayByDivision();
                     break;
-                case 9:
+                case 10:
+                    changeColumnName();
+                    break;
+                case 11:
+                    addColumn();
+                    break;
+                case 12:
                     System.exit(0);
                     break;
                 default:
@@ -61,6 +72,9 @@ public class Main {
         }
     }
 
+    private static void getAllEmployees(){
+        System.out.println(employeeDAO.getAllEmployees());
+    }
     private static void addEmployee() {
         System.out.print("Enter Employee ID: ");
         int empId = scanner.nextInt();
@@ -77,7 +91,7 @@ public class Main {
         System.out.print("Enter SSN (no dashes): ");
         String ssn = scanner.nextLine();
 
-        Employee emp = new Employee();
+        com.company.Employee emp = new com.company.Employee();
         emp.setEmpId(empId);
         emp.setName(name);
         emp.setDivision(division);
@@ -99,7 +113,7 @@ public class Main {
         int empId = scanner.nextInt();
         scanner.nextLine();  // consume newline
         try {
-            Employee emp = employeeDAO.getEmployeeById(empId);
+            com.company.Employee emp = employeeDAO.getEmployeeById(empId);
             if (emp == null) {
                 System.out.println("Employee not found.");
                 return;
@@ -146,12 +160,12 @@ public class Main {
         System.out.print("Enter search keyword (name, SSN, or empId): ");
         String keyword = scanner.nextLine();
         try {
-            List<Employee> employees = employeeDAO.searchEmployee(keyword);
+            List<com.company.Employee> employees = employeeDAO.searchEmployee(keyword);
             if (employees.isEmpty()) {
                 System.out.println("No employees found.");
                 return;
             }
-            for (Employee emp : employees) {
+            for (com.company.Employee emp : employees) {
                 System.out.println(emp);
             }
         } catch (SQLException e) {
