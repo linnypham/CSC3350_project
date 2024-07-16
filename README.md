@@ -1,6 +1,7 @@
 # CSC3350_project
 
 Product Requirements:
+
 	Must have functions: (CRUD)
  
 	Create: 
@@ -22,6 +23,7 @@ Product Requirements:
 
 
 Project Requirements:
+
 	Database schema diagram from Beaver showing the original and these extra items. (OPTIONAL)
 	Minimum working UX in either console or GUI
 	Java class diagram (UML)
@@ -37,11 +39,11 @@ Project Requirements:
 		Reporting Use Case Diagram: illustrates the interactions related to generating reports, including full-time employee information with pay statement history, total pay for the month by job title, and total pay for the month by division. 
 
 Deliverable Items:
-2 use case diagrams
-1 class diagram
-2 sequence diagram
 
-Complete code
-Test Cases
-Software Design Document
-7 to 15-minute video
+	2 use case diagrams
+	1 class diagram
+	2 sequence diagram
+	Complete code
+	Test Cases
+	Software Design Document
+	7 to 15-minute video
