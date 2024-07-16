@@ -1,26 +1,26 @@
 # CSC3350_project
 
 Product Requirements:
-
-Must have functions: (CRUD)
-	Create:
+	Must have functions: (CRUD)
+	Create: 
+		insert data in Emp table
+		Change employee table; add column SSN
 	Read:
 		Full-time employee information with pay statement history
 		Total pay for month by job title
 		Total pay for month by Division
 		Search for an employee using name, SSN, empid to show their information
 	Update:
-		Change employee table; add column SSN
 		Update an employee's data
 		Update employee's salary for an increase of a particular percentage only for a salary amount range
 	Delete:
-
+		delete data in Emp table
 	
 	Coding Requirements:	
 		Add new java classes to gather and store this employee information in a dynamic data structure (list or collection) 
 
 
-Project Requirement:
+Project Requirements:
 	Database schema diagram from Beaver showing the original and these extra items. (OPTIONAL)
 	Minimum working UX in either console or GUI
 	Java class diagram (UML)
@@ -38,7 +38,7 @@ Project Requirement:
 Deliverable Items:
 2 use case diagrams
 1 class diagram
-1 sequence diagram
+2 sequence diagram
 
 Complete code
 Test Cases
