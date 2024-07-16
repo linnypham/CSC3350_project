@@ -3,7 +3,6 @@
 Product Requirements:
 
 	Must have functions: (CRUD)
- 
 	Create: 
 		insert data in Emp table
 		Change employee table; add column SSN
