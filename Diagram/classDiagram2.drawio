@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-16T02:01:34.369Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" etag="TrQXJs0H70lELeC99rKe" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-17T18:55:46.338Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" etag="QFpC2hbNa1ZZdpY0-XTh" version="24.7.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="454" dy="1064" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="823" dy="1540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -90,13 +90,13 @@
         <mxCell id="E92chik7sLoNUpoqtJa6-29" value="addColumnUI()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="AhQCmia05qZnpwj6XjRJ-11" vertex="1">
           <mxGeometry y="190" width="220" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TOlJj72MWKn4zrrC5AWX-0" value="getPayStatementByIdUI()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="AhQCmia05qZnpwj6XjRJ-11">
+        <mxCell id="TOlJj72MWKn4zrrC5AWX-0" value="getPayStatementByIdUI()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="AhQCmia05qZnpwj6XjRJ-11" vertex="1">
           <mxGeometry y="216" width="220" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TOlJj72MWKn4zrrC5AWX-1" value="getTotelPayByJobTitleUI()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="AhQCmia05qZnpwj6XjRJ-11">
+        <mxCell id="TOlJj72MWKn4zrrC5AWX-1" value="getTotelPayByJobTitleUI()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="AhQCmia05qZnpwj6XjRJ-11" vertex="1">
           <mxGeometry y="242" width="220" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TOlJj72MWKn4zrrC5AWX-2" value="getTotelPayByDivisionUI()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="AhQCmia05qZnpwj6XjRJ-11">
+        <mxCell id="TOlJj72MWKn4zrrC5AWX-2" value="getTotelPayByDivisionUI()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="AhQCmia05qZnpwj6XjRJ-11" vertex="1">
           <mxGeometry y="268" width="220" height="26" as="geometry" />
         </mxCell>
         <mxCell id="AhQCmia05qZnpwj6XjRJ-16" value="DatabaseConnection" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -116,7 +116,7 @@
         <mxCell id="AhQCmia05qZnpwj6XjRJ-17" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="AhQCmia05qZnpwj6XjRJ-16" vertex="1">
           <mxGeometry y="104" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="AhQCmia05qZnpwj6XjRJ-24" value="getConnection()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="AhQCmia05qZnpwj6XjRJ-16" vertex="1">
+        <mxCell id="AhQCmia05qZnpwj6XjRJ-24" value="createConnection()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="AhQCmia05qZnpwj6XjRJ-16" vertex="1">
           <mxGeometry y="112" width="160" height="26" as="geometry" />
         </mxCell>
       </root>
