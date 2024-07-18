@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-17T23:57:47.624Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" etag="swtXUwAxvljp0FVHVecX" version="24.7.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-18T01:57:44.381Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" etag="fKBR0dZocfiGvf8axXKd" version="24.7.1" type="github">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="1185" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2074" dy="1113" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -20,7 +20,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-10" value="addEmpUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" target="9l75EntxXl0DtqPnIjqQ-12">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-10" value="addEmpUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" target="9l75EntxXl0DtqPnIjqQ-12" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="70" y="110" as="sourcePoint" />
             <Array as="points">
@@ -29,13 +29,13 @@
             <mxPoint x="195" y="110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-11" value="EmployeeDAO()" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-11" value="EmployeeDAO()" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
           <mxGeometry x="205" y="30" width="100" height="410" as="geometry" />
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="9l75EntxXl0DtqPnIjqQ-11">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="9l75EntxXl0DtqPnIjqQ-11" vertex="1">
           <mxGeometry x="45" y="70" width="10" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-13" value="updateEmpUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" target="9l75EntxXl0DtqPnIjqQ-12">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-13" value="updateEmpUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" target="9l75EntxXl0DtqPnIjqQ-12" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="70" y="130" as="sourcePoint" />
             <Array as="points">
@@ -44,7 +44,7 @@
             <mxPoint x="200" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-14" value="deleteEmpUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" target="9l75EntxXl0DtqPnIjqQ-12">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-14" value="deleteEmpUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" target="9l75EntxXl0DtqPnIjqQ-12" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="70" y="150" as="sourcePoint" />
             <Array as="points">
@@ -54,7 +54,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-15" value="searchEmpUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-15" value="searchEmpUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="65" y="230" as="sourcePoint" />
             <Array as="points">
@@ -64,7 +64,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-17" value="updateSalaryUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-17" value="updateSalaryUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="65" y="170" as="sourcePoint" />
             <Array as="points">
@@ -74,7 +74,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-18" value="addColumnUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-18" value="addColumnUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="65" y="190" as="sourcePoint" />
             <Array as="points">
@@ -84,37 +84,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-19" value="getPayStatementByIdUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="65" y="300" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="190" y="300" />
-            </Array>
-            <mxPoint x="250" y="300" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-22" value="getTotalPayByJobTitleUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="65" y="320" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="195" y="320" />
-            </Array>
-            <mxPoint x="250" y="320" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-23" value="getTotalPayByDivisionUI()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="65" y="340" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="190" y="340" />
-            </Array>
-            <mxPoint x="250" y="340" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-24" value="addEmp(columns,values)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="9l75EntxXl0DtqPnIjqQ-12" target="9l75EntxXl0DtqPnIjqQ-34">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-24" value="addEmp(columns,values)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" source="9l75EntxXl0DtqPnIjqQ-12" target="9l75EntxXl0DtqPnIjqQ-34" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="210" y="110" as="sourcePoint" />
             <Array as="points">
@@ -123,7 +93,7 @@
             <mxPoint x="340" y="110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-25" value="updateEmp(columns,values)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="9l75EntxXl0DtqPnIjqQ-12" target="9l75EntxXl0DtqPnIjqQ-34">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-25" value="updateEmp(columns,values)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" source="9l75EntxXl0DtqPnIjqQ-12" target="9l75EntxXl0DtqPnIjqQ-34" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="210" y="130" as="sourcePoint" />
             <Array as="points">
@@ -132,7 +102,7 @@
             <mxPoint x="340" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-26" value="deleteEmp(id)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="9l75EntxXl0DtqPnIjqQ-12" target="9l75EntxXl0DtqPnIjqQ-34">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-26" value="deleteEmp(id)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" source="9l75EntxXl0DtqPnIjqQ-12" target="9l75EntxXl0DtqPnIjqQ-34" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="210" y="150" as="sourcePoint" />
             <Array as="points">
@@ -142,7 +112,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-27" value="searchEmp(id,name,ssn)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-27" value="searchEmp(id,name,ssn)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="260" y="230" as="sourcePoint" />
             <Array as="points">
@@ -152,7 +122,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-28" value="updateSalary(value,range)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-28" value="updateSalary(value,range)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="260" y="170" as="sourcePoint" />
             <Array as="points">
@@ -162,7 +132,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-29" value="addColumn(column,datatype)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-29" value="addColumn(column,datatype)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="260" y="190" as="sourcePoint" />
             <Array as="points">
@@ -172,43 +142,13 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-30" value="getPayStatementById(id)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="260" y="300" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="335" y="300" />
-            </Array>
-            <mxPoint x="425" y="300" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-31" value="getTotalPayByJobTitle(jobTitle)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="260" y="320" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="340" y="320" />
-            </Array>
-            <mxPoint x="425" y="320" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-32" value="getTotalPayByDivision()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="260" y="340" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="335" y="340" />
-            </Array>
-            <mxPoint x="425" y="340" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-33" value="JDBC" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-33" value="JDBC" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
           <mxGeometry x="380" y="30" width="100" height="410" as="geometry" />
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-34" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="9l75EntxXl0DtqPnIjqQ-33">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-34" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="9l75EntxXl0DtqPnIjqQ-33" vertex="1">
           <mxGeometry x="45" y="70" width="10" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-35" value="Print Employee Infos" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-35" value="Print Employee Infos" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry x="0.001" relative="1" as="geometry">
             <mxPoint x="65" y="250" as="targetPoint" />
             <Array as="points">
@@ -218,13 +158,13 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-36" value="Data Base" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=40;" vertex="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-36" value="Data Base" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=40;" parent="1" vertex="1">
           <mxGeometry x="920" y="30" width="100" height="410" as="geometry" />
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-37" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="9l75EntxXl0DtqPnIjqQ-36">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-37" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="9l75EntxXl0DtqPnIjqQ-36" vertex="1">
           <mxGeometry x="45" y="70" width="10" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-38" value="executeQuery(&quot;SELECT * FROM Employee WHERE name LIKE ? OR ssn LIKE OR empID LIKE ?&quot;" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-38" value="executeQuery(&quot;SELECT * FROM Employee WHERE name LIKE ? OR ssn LIKE OR empID LIKE ?&quot;" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="435" y="230" as="sourcePoint" />
             <Array as="points">
@@ -233,7 +173,7 @@
             <mxPoint x="965" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9l75EntxXl0DtqPnIjqQ-39" value="ResultSet" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="9l75EntxXl0DtqPnIjqQ-39" value="ResultSet" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry x="0.001" relative="1" as="geometry">
             <mxPoint x="435" y="250" as="targetPoint" />
             <Array as="points">
