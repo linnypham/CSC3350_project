@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="733b4617-cc03-4838-bdfd-0a7104e2d0bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/EmployeeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/EMPLOYEE MANAGEMENT SYSTEM/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/DatabaseConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/EmployeeDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/PayStatement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EMPLOYEE MANAGEMENT SYSTEM/PayStatementDAO.class" beforeDir="false" />
-    </list>
+    <list default="true" id="733b4617-cc03-4838-bdfd-0a7104e2d0bb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +47,7 @@
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Linny/Documents/GitHub/CSC3350_project/lib/mysql-connector-j-9.0.0/mysql-connector-j-9.0.0.jar",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.JavaFX"
