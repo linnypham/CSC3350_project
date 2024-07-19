@@ -83,6 +83,9 @@ public class ClientInteraction {
             case 5:
                 System.out.println("This will call the updateSalary()");//placeholder for method call
                 break;
+            default:
+                System.out.println("None of the menu options were selected");
+                break;    
         }
     }
 
