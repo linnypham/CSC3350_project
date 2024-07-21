@@ -1,19 +1,74 @@
-public class Employee implements Table {
+import java.sql.*;
+import java.util.Random;
+import java.util.Scanner;
 
-    @Override
-    public String addColumn(String column, String datatype) {
-        return "ALTER TABLE employee ADD " + column + " " + datatype + ";";
+public class Employee {
+    private int empId;
+    private String name;
+    private String division;
+    private String jobTitle;
+    private double salary;
+    private String ssn;
+
+    public Employee() {}
+
+    public Employee(int empId, String name, String division, String jobTitle, double salary, String ssn) {
+        this.empId = empId;
+        this.name = name;
+        this.division = division;
+        this.jobTitle = jobTitle;
+        this.salary = salary;
+        this.ssn = ssn;
     }
 
-    @Override
-    public String searchTable(String fname, String lname, int ssn, int empid) {
-        return "SELECT * FROM employee WHERE fname = '" + fname + "' AND lname = '" + lname + "' AND ssn = " + ssn + " AND empid = " + empid + ";";
+    // Getters and Setters
+    public int getEmpId() {
+        return empId;
     }
 
-    @Override
-    public String updateTable(int empid, String column, String value) {
-        return "UPDATE employee SET " + column + " = '" + value + "' WHERE empid = " + empid + ";";
+    public void setEmpId(int empId) {
+        this.empId = empId;
     }
 
-    // Ensure all methods from the Table interface are implemented
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public String getDivision() {
+        return division;
+    }
+
+    public void setDivision(String division) {
+        this.division = division;
+    }
+
+    public String getJobTitle() {
+        return jobTitle;
+    }
+
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public String getSSN() {
+        return ssn;
+    }
+
+    public void setSSN(String ssn) {
+        this.ssn = ssn;
+    }
+
 }
