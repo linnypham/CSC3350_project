@@ -3,7 +3,7 @@
  * This call will serve as the medium between the client and the database
  * The client's input would allow them to navigate through various features of the database
  *
- * It needs an instance of the DatabaseConnection("connection")
+ * This class requires an instance of the DatabaseConnection("connection")
  */
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -18,7 +18,7 @@ public class ClientInteraction {
         connection.createConnection(); // creates connection
         Connection conn = connection.getConnection();
 
-        DatabaseTableFunctionality employeeTable = new DatabaseTableFunctionality(tableName); // object can be used to create new table
+        DatabaseTableFunctionality employeeTable = new DatabaseTableFunctionality(); // object can be used to create new table
 
         Scanner inputScanner = new Scanner(System.in);
 
@@ -65,6 +65,12 @@ public class ClientInteraction {
                 }
             }
         }
+
+        // Close the database connection after interaction is over
+        if (connection.getConnection() != null) {
+            connection.getConnection().close();
+        }
+
     }
 
     // This function accepts the user's input and navigate through the menu based on that option
