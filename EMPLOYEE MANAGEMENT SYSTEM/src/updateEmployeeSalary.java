@@ -11,10 +11,10 @@ public String updateEmployeeSalary(Connection conn, Scanner inputScanner)throws 
 
         double multiplier = 1 + (percentageIncrease / 100);
 
-        String sql = String.format("UPDATE employee SET salary = salary * '" + multiplier + "' WHERE empid = '" + empid + "' AND salary BETWEEN '" + minSalary + "' AND '" + maxSalary + "'")
+        String sql = String.format("UPDATE employee SET salary = salary * '" + multiplier + "' WHERE empid = '" + empId + "' AND salary BETWEEN '" + minSalary + "' AND '" + maxSalary + "'")
         try (PreparedStatement updateStatement = conn.prepareStatement(sql)) {
             updateStatement.setDouble(1,multiplier);
-            updateStatement.setInt(2,empid);
+            updateStatement.setInt(2,empId);
             updateStatement.setInt(3,minSalary);
             updateStatement.setInt(4,maxSalary);
             updateStatement.executeUpdate();
