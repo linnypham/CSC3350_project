@@ -1,4 +1,4 @@
-public String updateEmployeeSalary(Connection conn, Scanner inputScanner)throws SQLException{
+public void updateEmployeeSalary(Connection conn, Scanner inputScanner)throws SQLException{
 
         System.out.print("Enter employee ID to update employee's salary : ");
         int empId = inputScanner.nextInt();
