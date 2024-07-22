@@ -3,14 +3,6 @@ import java.util.*;
 
 public class EmployeeFucntionality {
 
-    Employee employee = new Employee();
-
-    private int empId;
-    private String name;
-    private String division;
-    private String jobTitle;
-    private double salary;
-    private String ssn;
 
     // Add employee to the database
     public static void addEmployee(Connection conn, String tableName, Employee employee) throws SQLException {
@@ -25,7 +17,6 @@ public class EmployeeFucntionality {
             pstmt.executeUpdate();
         }
     }
-
 
     // Update employee information
     public static void updateEmployee(Connection conn, Scanner inputScanner, String tableName) throws SQLException {
@@ -116,6 +107,32 @@ public class EmployeeFucntionality {
 
         return empId;
     }
+
+    public static void updateEmployeeSalary(Connection conn, Scanner inputScanner, String tableName) throws SQLException {
+        System.out.print("Enter employee ID to update employee's salary: ");
+        int empId = inputScanner.nextInt();
+        System.out.print("Enter salary increase % (EX: 3.2): ");
+        double percentageIncrease = inputScanner.nextDouble();
+        System.out.print("Enter minimum salary: ");
+        double minSalary = inputScanner.nextDouble();
+        System.out.print("Enter maximum salary: ");
+        double maxSalary = inputScanner.nextDouble();
+
+        double multiplier = 1 + (percentageIncrease / 100);
+
+        // Using placeholders in the SQL query
+        String sql = String.format("UPDATE %s SET salary = salary * ? WHERE empId = ? AND salary BETWEEN ? AND ?", tableName);
+
+        try (PreparedStatement updateStatement = conn.prepareStatement(sql)) {
+            // Setting the parameters
+            updateStatement.setDouble(1, multiplier);
+            updateStatement.setInt(2, empId);
+            updateStatement.setDouble(3, minSalary);
+            updateStatement.setDouble(4, maxSalary);
+            updateStatement.executeUpdate();
+        }
+    }
+
 
 
 
