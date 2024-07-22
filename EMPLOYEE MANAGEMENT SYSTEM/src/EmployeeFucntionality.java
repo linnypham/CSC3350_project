@@ -108,6 +108,7 @@ public class EmployeeFucntionality {
         return empId;
     }
 
+    //this is Jarhud's function, slightly modified.
     public static void updateEmployeeSalary(Connection conn, Scanner inputScanner, String tableName) throws SQLException {
         System.out.print("Enter employee ID to update employee's salary: ");
         int empId = inputScanner.nextInt();
