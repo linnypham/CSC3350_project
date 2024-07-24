@@ -9,6 +9,5 @@ public interface DatabaseFunctionalityInterface {
     void displayTable(String tableName) throws SQLException;
     void updateTable() throws SQLException;
     void searchTable(String tableName) throws SQLException;
-    // Add other methods as needed
 }
 
