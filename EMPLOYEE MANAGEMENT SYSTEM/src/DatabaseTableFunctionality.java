@@ -203,17 +203,6 @@ public class DatabaseTableFunctionality implements DatabaseFunctionalityInterfac
         return String.format("%-" + length + "s", text);
     }
 
-
-    @Override
-    public void updateTable() throws SQLException {
-        // Placeholder for updating the table
-    }
-
-    @Override
-    public void searchTable(String tableName) throws SQLException {
-        // Placeholder for searching the table
-    }
-
     private void executeUpdate(String sql, String successMessage) throws SQLException {
         try (Statement statement = connection.createStatement()) {
             statement.executeUpdate(sql);
