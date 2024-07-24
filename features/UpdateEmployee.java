@@ -1,3 +1,8 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 private static void updateEmployee() {
         System.out.print("Enter Employee ID to update: ");
         int empId = scanner.nextInt();
@@ -32,4 +37,35 @@ private static void updateEmployee() {
             e.printStackTrace();
             System.out.println("Failed to update employee.");
         }
+    }
+
+    public Employee getEmployeeById(int id) throws SQLException {
+        Connection conn = DatabaseConnection.getConnection();
+        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM Employee WHERE empId = ?");
+        stmt.setInt(1, id);
+        ResultSet rs = stmt.executeQuery();
+        if (rs.next()) {
+            Employee emp = new Employee();
+            emp.setEmpId(rs.getInt("empId"));
+            emp.setName(rs.getString("name"));
+            emp.setDivision(rs.getString("division"));
+            emp.setJobTitle(rs.getString("jobTitle"));
+            emp.setSalary(rs.getDouble("salary"));
+            emp.setSsn(rs.getString("ssn"));
+            return emp;
+        } else {
+            return null;
+        }
+    }
+
+    public void updateEmployee(Employee emp) throws SQLException {
+        Connection conn = DatabaseConnection.getConnection();
+        PreparedStatement stmt = conn.prepareStatement("UPDATE Employee SET name = ?, division = ?, jobTitle = ?, salary = ?, ssn = ? WHERE empId = ?");
+        stmt.setString(1, emp.getName());
+        stmt.setString(2, emp.getDivision());
+        stmt.setString(3, emp.getJobTitle());
+        stmt.setDouble(4, emp.getSalary());
+        stmt.setString(5, emp.getSsn());
+        stmt.setInt(6, emp.getEmpId());
+        stmt.executeUpdate();
     }
