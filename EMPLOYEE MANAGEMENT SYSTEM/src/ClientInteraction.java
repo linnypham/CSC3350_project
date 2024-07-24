@@ -44,7 +44,9 @@ public class ClientInteraction {
             System.out.print("> ");
             int userInput = inputScanner.nextInt();
 
-            if (userInput < 1 || userInput > 10) { // Corrected range to include case 7
+
+            //Checks that userinput is between 1 and 10
+            if (userInput < 1 || userInput > 10) { 
                 System.out.println("Not a valid option");
                 System.out.print("Would you like to try again?(Y/N)\n> ");
                 String choice = inputScanner.next().toLowerCase();
@@ -72,7 +74,7 @@ public class ClientInteraction {
             }
         }
 
-        // Close the database connection after interaction is over
+        // Close the database connection after user interaction is over
         if (connection.getConnection() != null) {
             connection.getConnection().close();
         }
