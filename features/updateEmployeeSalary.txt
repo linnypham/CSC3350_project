@@ -1,3 +1,0 @@
-UPDATE employee
-SET salary = salary*(1+0.032)
-WHERE salary >= 58000 AND salary <105000;
