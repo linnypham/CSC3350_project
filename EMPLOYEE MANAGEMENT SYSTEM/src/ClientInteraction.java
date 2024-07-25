@@ -118,12 +118,6 @@ public class ClientInteraction {
                 System.out.println("Invalid Option.");
                 break;
         }
-        System.out.print("Would you like to perform another operation? (Y/N) ");
-        String choice = inputScanner.next().toLowerCase();
-        if (!choice.equals("y") && !choice.equals("yes")) {
-            System.out.println("Database Access Terminated.");
-            System.exit(0);
-        }
     }
 
     // Method to add multiple employees
