@@ -41,7 +41,7 @@ public class ClientInteraction {
                     "   7. View Pay By Division\n"+
                     "   8. View Pay Statement History\n"+
                     "   9. Delete Data\n" + // delete data would fall under this (D)
-                    "   10. Add Column To Tablet\n"+
+                    "   10. Add Column To Table\n"+
                     "   11. Exit"); // exit program
             System.out.print("> ");
             int userInput = inputScanner.nextInt();
