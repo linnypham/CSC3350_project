@@ -15,6 +15,14 @@ INSERT INTO Employee (empId, name, division, jobTitle, salary, ssn) VALUES
 (487713084, 'Wanda Maximoff', 'Research and Development', 'R&D Scientist', 68000.00, '753951486');
 
 
+TestTable Table Inputs:
+INSERT INTO TestTable (empid, name) VALUES
+(1, 'Alice'),
+(2, 'Bob'),
+(3, 'Charlie'),
+(4, 'Diana'),
+(5, 'Ethan');
+
 
  
 PayStatement table inputs:
