@@ -20,42 +20,6 @@ public class EmployeeDAO {
         }
     }
 
-    // Update employee information
-    public static void updateEmployee(Connection conn, Scanner inputScanner, String tableName) throws SQLException
-    {
-        System.out.print("Enter employee ID to update: ");
-        int empId = inputScanner.nextInt();
-        inputScanner.nextLine();
-
-        System.out.print("Enter new Full Name: ");
-        String name = inputScanner.nextLine();
-
-        System.out.print("Enter new division: ");
-        String division = inputScanner.nextLine();
-
-        System.out.print("Enter new job title: ");
-        String jobTitle = inputScanner.nextLine();
-
-        System.out.print("Enter new salary: ");
-        double salary = inputScanner.nextDouble();
-        inputScanner.nextLine(); // Consume newline
-
-        System.out.print("Enter new SSN: ");
-        String ssn = inputScanner.nextLine();
-
-        String sql = String.format("UPDATE %s SET name = ?, division = ?, jobTitle = ?, salary = ?, ssn = ? WHERE empId = ?", tableName);
-        try (PreparedStatement pstmt = conn.prepareStatement(sql))
-        {
-            pstmt.setString(1, name);
-            pstmt.setString(2, division);
-            pstmt.setString(3, jobTitle);
-            pstmt.setDouble(4, salary);
-            pstmt.setString(5, ssn);
-            pstmt.setInt(6, empId);
-            pstmt.executeUpdate();
-        }
-        System.out.println("Employee information updated.");
-    }
 
     public static Employee getEmployeeById(String empId, Connection conn, String tableName) throws SQLException
     {
