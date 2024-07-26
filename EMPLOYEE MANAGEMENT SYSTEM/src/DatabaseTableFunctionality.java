@@ -1,6 +1,7 @@
 import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class DatabaseTableFunctionality implements DatabaseFunctionalityInterface {
 
@@ -111,16 +112,25 @@ public class DatabaseTableFunctionality implements DatabaseFunctionalityInterfac
     }
 
     @Override
-    public void addColumn(String tableName, String columnName, String dataType) throws SQLException
-    {
+    public void addColumn(String tableName, String columnName, String dataType) throws SQLException {
+        Scanner scanner = new Scanner(System.in);
+        int attempts = 0;
 
-        if (!columnExists(tableName, columnName))
-        {
+        while (!tableExist(tableName) && attempts < 2) {
+            System.out.println("Table " + tableName + " does not exist. Please enter a valid table name:");
+            tableName = scanner.nextLine();
+            attempts++;
+        }
+
+        if (!tableExist(tableName)) {
+            System.out.println("Table does not exist. Returning to menu.");
+            return;
+        }
+
+        if (!columnExists(tableName, columnName)) {
             String addColumnSQL = String.format("ALTER TABLE %s ADD COLUMN %s %s", tableName, columnName, dataType);
             executeUpdate(addColumnSQL, "Column " + columnName + " added to table " + tableName);
-        }
-        else
-        {
+        } else {
             System.out.println("Column " + columnName + " already exists in table " + tableName);
         }
     }
