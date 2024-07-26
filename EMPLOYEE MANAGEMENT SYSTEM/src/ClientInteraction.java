@@ -40,7 +40,7 @@ public class ClientInteraction {
                     "   6. View Pay By Job\n"+
                     "   7. View Pay By Division\n"+
                     "   8. View Pay Statement History\n"+
-                    "   9. Delete Data\n" + // delete data would fall under this (D)
+                    "   9. Delete Employee Data\n" + // delete data would fall under this (D)
                     "   10. Add Column To Table\n"+
                     "   11. Exit"); // exit program
             System.out.print("> ");
@@ -96,10 +96,10 @@ public class ClientInteraction {
                 EmployeeDAO.updateEmployeeSalary(conn, inputScanner, employeeTable);
                 break;
             case 6:
-               PayStatementDAO.payByJob(conn, inputScanner);
+                PayStatementDAO.payByJob(conn, inputScanner);
                 break;
             case 7:
-               PayStatementDAO.payByDivision(conn, inputScanner);
+                PayStatementDAO.payByDivision(conn, inputScanner);
                 break;
             case 8:
                 PayStatementDAO.payStatementHistory(conn, inputScanner);
@@ -108,7 +108,7 @@ public class ClientInteraction {
                 EmployeeDAO.deleteEmployee(conn, inputScanner, employeeTable);
                 break;
             case 10:
-                dbFunctionality.addColumn("TestTable", "email", "VARCHAR(50)");
+                addColumnToTable(inputScanner, conn);
                 break;
             case 11:
                 System.out.println("Exiting...");
@@ -212,6 +212,44 @@ public class ClientInteraction {
 
 
 
+    }
+
+    private static void addColumnToTable(Scanner inputScanner, Connection conn) throws SQLException {
+        System.out.print("Enter the name of the table you want to add a column to: ");
+        String tableName = inputScanner.next();
+
+        System.out.print("Enter the name of the new column: ");
+        String columnName = inputScanner.next();
+
+        System.out.println("Select the data type of the new column:");
+        System.out.println("1. Text");
+        System.out.println("2. Number");
+        System.out.println("3. Decimal");
+        System.out.println("4. Date");
+
+        System.out.print("> ");
+        int dataTypeOption = inputScanner.nextInt();
+        String dataType = "";
+
+        switch (dataTypeOption) {
+            case 1:
+                dataType = "VARCHAR(255)";
+                break;
+            case 2:
+                dataType = "INT";
+                break;
+            case 3:
+                dataType = "DECIMAL(10, 2)";
+                break;
+            case 4:
+                dataType = "DATE";
+                break;
+            default:
+                System.out.println("Invalid option.");
+                return;
+        }
+
+        dbFunctionality.addColumn(tableName, columnName, dataType);
     }
 
 }
